@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Melee : MonoBehaviour
-    // Mellee attack varibles
+    // Melee attack varibles
     {
         public float damage;
         public float range;
