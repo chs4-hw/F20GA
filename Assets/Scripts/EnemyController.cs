@@ -150,7 +150,7 @@ public class EnemyController : MonoBehaviour
     }
 
 
-    // Enemey cooldown between attacks
+    // Enemy cooldown between attacks
     void CoolDown()
     {
         attack = false;
