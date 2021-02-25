@@ -102,7 +102,8 @@ public class EnemyController : MonoBehaviour
         }
 
     }
-
+    
+    // AI Search for a point on the world to move to when in wander mode
     void SearchPoint()
     {
         float randomZ = Random.Range(-walkRange - agent.stoppingDistance, walkRange + agent.stoppingDistance);
@@ -116,7 +117,8 @@ public class EnemyController : MonoBehaviour
         }
     }
 
-
+    // Chase
+    // Chase player when entering the look range
     void Chase()
     {
         agent.SetDestination(target.position);
