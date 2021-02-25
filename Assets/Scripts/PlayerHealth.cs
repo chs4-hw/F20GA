@@ -14,7 +14,6 @@ public class PlayerHealth : MonoBehaviour
 
     public Camera player;
     public float safeRadius = 100f;
-    bool safe = true;
 
 
     // Start is called before the first frame update
@@ -25,7 +24,7 @@ public class PlayerHealth : MonoBehaviour
     }
 
     // Update is called once per frame
-    // Health slowly regrenrates while not in 'range'(combat) of enemy, and updates the health bar 
+     
     void Update()
     {
         if (currentHealth <= 0)
@@ -37,7 +36,7 @@ public class PlayerHealth : MonoBehaviour
             RegenerateHealth();
         }
     }
-
+    // Health slowly regrenrates while not in 'range'(combat) of enemy, and updates the health bar
     void RegenerateHealth()
     {
         Ray ray = player.ScreenPointToRay(Input.mousePosition);
